@@ -1,0 +1,48 @@
+@import 'variables';
+
+/**
+ * Table containing the data.
+ */
+.fig-table-content-container {
+	
+	.fig-table-content {
+		table-layout: fixed;
+		border-collapse: collapse;
+		width: fit-content;
+		max-width: 100%;
+		// border: 1px solid #dbdbdb;
+		margin: 2rem 0;
+		overflow-x: auto;
+		display: block;
+		box-shadow: 1px 0px 20px rgba(black, 0.1);
+		
+		* {
+			box-sizing: border-box;
+		}
+		
+		tr {
+			display: table-row;
+			width: 100%;
+			text-align: left;
+			
+			/* @media (max-width: $mobile-breakpoint) {
+				margin-bottom: 1.5rem;
+				display: block;
+			} */
+			
+			thead,
+			td,
+			th,
+			tfoot {
+				display: table-cell;
+				border: 1px solid #dbdbdb;
+				padding: 7px 12px;
+				min-width: 150px;
+				white-space: nowrap;
+			}
+			
+		}
+		
+	}
+
+}
